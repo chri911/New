@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.scss">
+  <link rel="shortcut icon" href="images/favicon.svg">
+  <title>PlantIn</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <a class="header__logo logo" href="#">
+      </a>
+      <a href="#search" class="header__search header__search--mobile"></a>
+      <div class="header__burger burger">
+        <div class="burger__line"></div>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#discover" class="nav__link">
+              Discover
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#plants" class="nav__link">
+              My plants
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              Diseases
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#blog" class="nav__link">
+              Blog
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              FAQ
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__additional">
+        <div class="header__upgrade">Upgrade to PRO</div>
+        <a href="#search" class="header__search"></a>
+        <a href="#" class="header__user"></a>
+      </div>
+    </div>
+    
+  </header>
+
+  <main class="main">
+    <div class="breadcrumbs">
+      <div class="container">
+          <div class="breadcrumbs__inner">
+              <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">
+                      Home
+                    </a>
+                  </li>
+                  <li class="breadcrumbs__item breadcrumbs__item--desktop">
+                    <span class="breadcrumbs__link">
+                      Blog
+                    </span>
+                  </li>  
+              </ul>
+          </div>
+      </div>
+  </div>
+    <section class="search">
+      <a name="search"></a>
+      <div class="search__container promo container">
+        <h2 class="search__title promo__title">
+          Stay always tuned with planting trends
+        </h2>
+        <h3 class="search__subtitle promo__subtitle">
+          <strong>Tips & Tricks</strong> selected specially for <strong>you!</strong>
+        </h3>
+        <form class="search__form form">
+          <input
+            class="form__input"
+            placeholder="Search"
+            required
+          >
+          <button type="submit">
+            <img src="./images/search.svg" alt="search">
+          </button>
+        </form>
+        <div class="search__image promo__image"></div>
+      </div>
+    </section>
+
+    <section class="new">
+      <a name="blog"></a>
+      <div class="new__container container">
+        <div class="new__rectangle">New</div>
+        <div class="new__card card">
+          <div class="card__image new__image"></div>
+          <div class="card__main new__main">
+            <div class="card__info new__info">Feb 23 · 8 min read</div>
+            <div class="card__title new__title">Tips & Tricks For Cutting</div>
+            <div class="card__text new__text">
+              Pruning, like any other skill, requires knowing what you are doing
+              to achieve success. The old idea that anyone with a chain saw or a
+              pruning saw can be a...
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top">
+      <a name="plants"></a>
+      <div class="top__container container">
+        <h3 class="top__header">TOP of the Day</h3>
+        <div class="top__cards">
+          <div class="top__card card">
+            <div class="card__image top__image top__image--1"></div>
+            <div class="card__main top__main">
+              <div class="card__info top__info">Feb 23 · 8 min read</div>
+              <div class="card__title top__title">Professional Repot</div>
+              <div class="card__text top__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+          <div class="top__card card">
+            <div class="card__image top__image top__image--2"></div>
+            <div class="card__main top__main">
+              <div class="card__info top__info">Feb 23 · 8 min read</div>
+              <div class="card__title top__title">Professional Repot</div>
+              <div class="card__text top__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="interesting">
+      <a name="discover"></a>
+      <div class="interesting__container container">
+        <h3 class="interesting__header">Interesting</h3>
+        <div class="interesting__cards">
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--1"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Watering mastery</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--2"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Plant pot secrets</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--3"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Professional Repot</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="interesting__cards interesting__cards--desktop">
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--1"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Watering mastery</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--2"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Plant pot secrets</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--3"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Professional Repot</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <a name="contact"></a>
+      <div class="banner__container promo container">
+        <a href="#" class="banner__logo logo"></a>
+        <h2 class="banner__title promo__title">
+          Get unlimited access to exclusive articles
+        </h2>
+        <h3 class="banner__subtitle promo__subtitle">
+          Get rid of limits and read everything you wish
+        </h3>
+        <button class="banner__button">
+          Try For Free
+        </button>
+        <div class="banner__image promo__image"></div>
+      </div>
+    </section>
+    <section class="interesting">
+      <div class="interesting__container container">
+        <div class="interesting__cards">
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--1"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Watering mastery</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--2"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Plant pot secrets</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--3"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Professional Repot</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="interesting__cards interesting__cards--desktop">
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--1"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Watering mastery</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--2"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Plant pot secrets</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+          <div class="interesting__card card">
+            <div class="card__image interesting__image interesting__image--3"></div>
+            <div class="card__main interesting__main">
+              <div class="card__info interesting__info">Feb 23 · 8 min read</div>
+              <div class="card__title interesting__title">Professional Repot</div>
+              <div class="card__text interesting__text">
+                Repotting a plant can seem like a difficult task because a lot
+                 of things can go wrong – you can damage...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="unloading">
+      <div class="unloading__container container"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__left">
+        <div class="footer__text">Terms of Service</div>
+        <div class="footer__text footer__text--mid">Privacy Policy</div>
+        <div class="footer__text">Subscription Policy</div>
+      </div>
+      <div class="footer__text">
+        ©Copyright  © 2020 PlantIn. 
+        All rights reserved
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>

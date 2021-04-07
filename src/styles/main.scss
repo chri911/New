@@ -1,0 +1,42 @@
+@import "vars";
+@import "mixins";
+@import "reset";
+@import "header";
+@import "logo";
+@import "burger";
+@import "nav";
+@import "breadcrumbs";
+@import "promo";
+@import "search";
+@import "form";
+@import "card";
+@import "new";
+@import "top";
+@import "interesting";
+@import "banner";
+@import "unloading";
+@import "footer";
+
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $mainColor;
+  scroll-behavior: smooth;
+  background-color: $bgColor;
+}
+
+.container {
+  padding: 0 16px;
+
+  @include onTablet {
+    padding: 0 20px;
+  }
+
+  @include onBigScreen {
+    width: 1074px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}

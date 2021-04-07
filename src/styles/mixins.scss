@@ -1,0 +1,26 @@
+@mixin fontHeader() {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #91A0B6;
+  padding: 8px 16px 16px;
+}
+
+@mixin onTablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin onNotebook {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin onBigScreen {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}

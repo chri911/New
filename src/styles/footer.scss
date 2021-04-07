@@ -1,0 +1,29 @@
+.footer {
+  padding: 90px 0 32px;
+  &__text {
+    color: #91A0B6;
+    text-align: center;
+    padding: 8px;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  @include onNotebook {
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__left {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__text {
+      max-width: 100%;
+      text-align: left;
+      margin: 0;
+      &--mid {
+        border-left: 1px solid #A9B6C8;
+        border-right: 1px solid #A9B6C8;
+      }
+    }
+  }
+}

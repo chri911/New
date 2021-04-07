@@ -1,0 +1,33 @@
+.form {
+  margin: 0 auto;
+  padding-bottom: 16px;
+  position: relative;
+  
+  @include onNotebook {
+    max-width: 522px;
+    margin: 0;
+  }
+  input{
+      display: block;
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 0px 0.470434px 2.21381px rgba(0, 0, 0, 0.0196802);
+      border-radius: 12px; 
+      height: 40px;
+      border: none;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 10px 16px 10px;
+      &::placeholder{
+        color: #91A0B6;
+      }
+  }
+  button{
+      position: absolute;
+      border: none;
+      background-color: transparent;
+      right: 8px;
+      top: 12px;
+      cursor: pointer;
+  }
+}

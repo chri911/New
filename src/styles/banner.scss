@@ -1,0 +1,49 @@
+.banner {
+  padding: 0 16px;
+  &__button {
+    align-items: center;
+    padding: 8px 32px;
+    height: 40px;
+    background: #04BF94;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 auto 24px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__image {
+    display: none;
+  }
+  @include onTablet {
+    margin-bottom: 56px;
+    &__container {
+      background: linear-gradient(90deg, #CFEDE6 7.49%, rgba(140, 222, 203, 0.832667) 100%);
+      border-radius: 12px;
+    }
+    &__button {
+      max-width: 156px;
+    }
+  }
+  @include onNotebook {
+    &__container {
+      position: relative;
+      height: 252px;
+      margin-bottom: 56px;
+    }
+    &__image {
+      display: block;
+      background-image: url(../images/banner_image.svg);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 336px;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.new {
+
+  &__card {
+    padding-top: 16px;
+  }
+  &__image{
+    background-image: url(../images/article_image.jpg);
+  }
+  &__rectangle {
+      width: 78px;
+      height: 36px;
+      padding-top: 8px;
+      position: relative;
+      background: #ED685C;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: center;
+      text-transform: uppercase;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 16px solid transparent;
+      border-right: 14px solid $bgColor;
+      border-bottom: 16px solid transparent;
+      right: -1px;
+      bottom: 2px;
+    }
+  }
+  @include onNotebook {
+
+    &__card {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__main {
+      padding-left: 32px;
+    }
+    &__image{
+      // width: 521px;
+      height: 364px;
+    }
+    &__title{
+      font-size: 48px;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.breadcrumbs{
+  &__inner{
+      padding: 16px 0 24px;
+  }
+  &__item {
+    display: inline-block;
+    + li{
+      padding-left: 24px;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+  &__link {
+    color: #91A0B6;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+
+    &::after{
+      content: "<";
+      position: absolute;
+      left: 0;
+      color: #91A0B6;;
+    }  
+  }
+  @include onTablet {
+    &__item--desktop {
+      display: inline-block;
+    }
+    &__link {
+      padding-left: 0;
+      &::after {
+        content: ">";
+        left: 57px;
+      }
+    }
+  }
+}

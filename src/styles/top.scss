@@ -1,0 +1,24 @@
+.top {
+  &__header {
+    border-top: 1px solid #c4c4c4;
+    @include fontHeader
+  }
+  &__image {
+    &--1 {
+      background-image: url(../images/top__image1.jpg);
+    }
+    &--2 {
+      background-image: url(../images/top_image2.jpg);
+    }
+  }
+  @include onNotebook {
+    &__cards {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__image {
+      width: 521px;
+      height: 364px;
+    }
+  }
+}

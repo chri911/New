@@ -1,0 +1,30 @@
+.search {
+  padding: 16px;
+  &__image {
+    display: none;
+  }
+  @include onNotebook {
+    
+    &__container {
+      position: relative;
+      height: 267px;
+      padding: 56px;
+    }
+
+    &__image {
+      display: block;
+      background-image: url(../images/search_image.png);
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 380px;
+      height: 100%;
+    }
+  }
+  @include onBigScreen {
+    padding: 56px;
+  }
+}

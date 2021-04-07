@@ -1,0 +1,40 @@
+.nav {
+    display: none;
+    &--mobile {
+      padding-top: 60px;
+      position: absolute;
+      display: block;
+      background-color: $accentColor;
+      color: #fff;
+      right: 0;
+      left: 120px;
+      top: 0;
+      z-index: 1;
+    }
+  
+    &__link {
+      display: inline-block;
+      padding: 20px;
+      transition: color linear 0.2s;
+
+      &--active {
+        color: $mainColor;
+      }
+    }
+    @include onNotebook {
+      display: flex;
+  
+      &__list {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 10px;
+      }
+  
+      &__link {
+        padding: 5px;
+        color: #262626;
+        font-weight: 500;
+      }
+    }
+}
