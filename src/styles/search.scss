@@ -4,7 +4,6 @@
     display: none;
   }
   @include onNotebook {
-    
     &__container {
       position: relative;
       height: 267px;
@@ -24,7 +23,5 @@
       height: 100%;
     }
   }
-  @include onBigScreen {
-    padding: 56px;
-  }
+
 }

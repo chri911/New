@@ -7,7 +7,7 @@
     max-width: 522px;
     margin: 0;
   }
-  input{
+  &__input{
       display: block;
       width: 100%;
       background: #FFFFFF;
@@ -22,12 +22,20 @@
         color: #91A0B6;
       }
   }
-  button{
+  button {
       position: absolute;
       border: none;
       background-color: transparent;
       right: 8px;
       top: 12px;
       cursor: pointer;
+  }
+  @include onBigScreen {
+    &__input {
+      margin-left: 56px;
+    }
+    button {
+      right: -35px;
+  }
   }
 }

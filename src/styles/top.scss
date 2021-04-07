@@ -12,6 +12,7 @@
     }
   }
   @include onNotebook {
+      margin-bottom: 56px;
     &__cards {
       display: flex;
       justify-content: space-around;

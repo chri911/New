@@ -1,6 +1,7 @@
 .promo {
   background: rgba(4, 191, 148, 0.16);
   border-radius: 16px;
+  margin-bottom: 24px;
   &__title {
     font-weight: 800;
     font-size: 24px;
@@ -17,6 +18,15 @@
   @include onNotebook {
     &__title {
       font-size: 32px;
+    }
+  }
+
+  @include onBigScreen {
+    &__title {
+      padding-left: 56px;
+    }
+    &__subtitle {
+      padding-left: 56px;
     }
   }
 }
