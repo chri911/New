@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --out-dir ./docs --public-url=‘./",
+    "build": "parcel build src/index.html --out-dir ./docs --public-url=./",
     "start": "parcel start src/index.html --open"
   },
   "repository": {
@@ -19,6 +19,7 @@
   "bugs": {
     "url": "https://github.com/chri911/New/issues"
   },
+  
   "homepage": "https://github.com/chri911/New#readme",
   "devDependencies": {
     "eslint": "^7.23.0",
