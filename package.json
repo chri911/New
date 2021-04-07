@@ -1,0 +1,30 @@
+{
+  "name": "New",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
+    // "build": "parcel build index.html --out-dir docs --public-url='./'",
+    "build": "parcel build src/index.html --out-dir ./docs ",
+    // "predeploy": "npm run build",
+    // "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chri911/New.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chri911/New/issues"
+  },
+  "homepage": "https://github.com/chri911/New#readme",
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "gh-pages": "^3.1.0",
+    "sass": "^1.32.8"
+  }
+}
